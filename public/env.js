@@ -12,7 +12,7 @@ socket.on('project:update', (project) => {
 })
 
 // socket.io to delete by id  -  and refresh all browsers
-socket.on('project:delete', (message) => {
+socket.on('project:delete', (id) => {
   $(`#project-id-${id}`).remove(); 
 })
 
